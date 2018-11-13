@@ -34,10 +34,18 @@
 遇到的问题：
     pycharm2018同步项目至github
         1.报错：无法连接github
+			原因：settings里面github配置出错
             解决办法：进入settings -> version Control -> github
                 输入用户名和密码登录至github
         2.报错：empty git --version output
+			原因：git程序路径不正确
             解决办法：进入settings -> version Control -> git
             选择git.exe的所在路径（安装位置中的bin目录下）
 		3.报错：Could not read from remote repository
+			原因：没有添加本地电脑的SSH密钥到github里
+			解决办法：
+				1.在本地创建SSH Key
+					$ ssh-keygen -t rsa -C '邮箱'
+				2.将创建好的‘.ssh’(用户主目录)下的'id_rsa.pub'内容粘贴到
+					GitHub->settings->SSH Key->Key里
 			
