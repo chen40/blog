@@ -3,7 +3,8 @@
 项目名称：个人博客
 项目负责任：陈世林
 项目内容：首页展示（主目录，关于，从事，产品，人际关系）
-项目环境：django+Html+MySQL
+项目环境：Python3 + MySQL + Django + PyMsql
+所需模块：django+pymysql
 
 过程：
 	1.创建博客项目
@@ -30,3 +31,13 @@
 		解决办法：在项目的__init__.py中添加
 			import pymysql
 			pymysql.install_as_MySQLdb()
+遇到的问题：
+    pycharm2018同步项目至github
+        1.报错：无法连接github
+            解决办法：进入settings -> version Control -> github
+                输入用户名和密码登录至github
+        2.报错：empty git --version output
+            解决办法：进入settings -> version Control -> git
+            选择git.exe的所在路径（安装位置中的bin目录下）
+		3.报错：Could not read from remote repository
+			
